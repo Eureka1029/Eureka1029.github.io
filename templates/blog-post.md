@@ -1,9 +1,9 @@
 ---
-title: "{{title}}"
-date: {{date}}
-description: "{{description}}"
-tags: [{{tags}}]
-categories: [{{categories}}]
+title:
+date:
+description:
+tags:
+categories:
 toc: false
 draft: true
 ---
