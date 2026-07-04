@@ -10,7 +10,7 @@ pygmentscodefencesguesssyntax = true
 [params]
   mode = "auto"
   useCDN = false
-  subtitle = "Don't look back"
+  subtitle = ""
   favicon = "/favicon.svg"
 
 [[params.social]]
