@@ -1,0 +1,14 @@
+{
+  "accentColor": "#2ccaf2",
+  "textFontFamily": "霞鹜文楷,LXGW WenKai Mono",
+  "monospaceFontFamily": "Consolas",
+  "interfaceFontFamily": "霞鹜文楷,LXGW WenKai Mono",
+  "cssTheme": "Minimal",
+  "translucency": true,
+  "baseFontSize": 15,
+  "theme": "moonstone",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "image-center"
+  ]
+}

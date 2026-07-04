@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "1297456f81ae44a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a826ba3a55da4f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0902a3cda07f5911",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1504e09c52010adc",
+    "type": "split",
+    "children": [
+      {
+        "id": "29d2ea97c312fd14",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cbcac56b8fb65794",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "899e3defb7683616",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "cfb21e8fc7f74137",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fdf1622e2a367859",
+    "type": "split",
+    "children": [
+      {
+        "id": "90a80391d2e33aa2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb9a8d726fae7959",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CLAUDE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "CLAUDE 的反向链接列表"
+            }
+          },
+          {
+            "id": "de707bd3a342e782",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CLAUDE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "CLAUDE 的出链列表"
+            }
+          },
+          {
+            "id": "77f53c0764987a9a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "7b80593e942458e2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "all-properties"
+            }
+          },
+          {
+            "id": "43928d8e058790a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CLAUDE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "CLAUDE 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "cbcac56b8fb65794",
+  "lastOpenFiles": [
+    "touxiang.svg",
+    "CLAUDE.md",
+    "blog-temp/README.md",
+    "云计算答疑/第五章-云原生技术.canvas",
+    "云计算答疑/背诵.md",
+    "云计算答疑/第四章-容器技术.canvas",
+    "云计算答疑/第三章-虚拟化技术.canvas",
+    "云计算答疑/第六章-云计算数据中心.canvas",
+    "云计算答疑/截图题目答疑.md",
+    "截屏2026-07-03 17.38.11.png",
+    "截屏2026-07-03 17.38.02.png",
+    "截屏2026-07-03 17.37.55.png",
+    "截屏2026-07-03 17.37.50.png",
+    "截屏2026-07-03 17.38.28.png",
+    "截屏2026-07-03 17.38.25.png",
+    "截屏2026-07-03 17.38.20.png",
+    "截屏2026-07-03 17.38.14.png",
+    "云计算答疑/5.3敏捷基础设施.md",
+    "云计算答疑/主观题汇总.md",
+    "idea",
+    "云计算技术0612AM2026.pdf",
+    "云计算答疑/5.2微服务.md",
+    "云计算答疑/第五章-云原生技术.md",
+    "云计算答疑/云计算整理.md",
+    "云计算答疑/虚拟机迁移.md",
+    "云计算答疑",
+    "未命名.md",
+    "attach/机器学习.png",
+    "欢迎.md",
+    "attach"
+  ]
+}

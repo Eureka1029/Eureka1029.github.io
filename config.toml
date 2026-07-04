@@ -11,6 +11,7 @@ pygmentscodefencesguesssyntax = true
   mode = "auto"
   useCDN = false
   subtitle = "记录学习与思考"
+  favicon = "/favicon.svg"
 
 [[params.social]]
 name = "GitHub"

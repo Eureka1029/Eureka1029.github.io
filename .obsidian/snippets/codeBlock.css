@@ -1,0 +1,117 @@
+/* ===== 代码块限制长宽 ===== */
+.markdown-preview-view code {
+  overflow: auto !important;
+  /* 限制代码块最大高度 */
+  max-height: 30em;
+  /* 禁止自动换行 */
+  white-space: pre;
+}
+
+/* ===== 代码块容器基础样式 ===== */
+.markdown-preview-view pre {
+  /* 顶部装饰条高度 */
+  --mac-bar-height: 36px;
+  /* Mac风格圆点直径 */
+  --mac-dot-size: 12px;
+  /* 复制按钮尺寸 */
+  --button-size: 18px;
+  /* 代码内容内边距 */
+  --code-padding: 1em;
+
+  /* 容器样式 */
+  border-radius: 8px !important;
+  position: relative;
+  padding:
+    calc(var(--mac-bar-height) + var(--code-padding)) var(--code-padding) var(--code-padding) var(--code-padding) !important;
+  overflow: hidden;
+}
+
+/* ===== 顶部装饰条 ===== */
+.markdown-preview-view pre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--mac-bar-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid var(--background-modifier-border-hover);
+  font-size: 0.9em;
+  z-index: 0;
+}
+
+/* ===== Mac风格圆点 ===== */
+ .markdown-preview-view pre::after {
+  content: "";
+  position: absolute;
+  top: calc((var(--mac-bar-height) - var(--mac-dot-size)) / 2);
+  left: 12px;
+
+  width: var(--mac-dot-size);
+  height: var(--mac-dot-size);
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow:
+    20px 0 0 #ffbd2e,
+    40px 0 0 #27c93f;
+  z-index: 1;
+} 
+
+
+/* ===== 复制按钮 ===== */
+.markdown-preview-view .copy-code-button {
+  position: absolute;
+  top: calc((var(--mac-bar-height) - var(--button-size)) / 2) !important;
+  right: 12px !important;
+  width: auto;
+  height: var(--button-size);
+  padding: 0 8px 0 0 !important;
+  margin: 0 !important;
+  color: var(--text-muted) !important;
+  background-color: transparent !important;
+  opacity: 0.7;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+
+  /* 添加伪元素显示"复制"文字 */
+  &::after {
+    content: "copy";
+    font-size: 1.2em;
+    margin-left: 4px;
+  }
+}
+
+/* 按钮悬停效果 */
+.markdown-preview-view .copy-code-button:hover {
+  /* background-color: #ebebeb !important; */
+  opacity: 1;
+  color: var(--text-normal) !important;
+}
+
+/* 一直显示复制按钮 */
+.markdown-preview-view .copy-code-button {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-flex !important;
+}
+
+/* ===== 暗色模式适配 ===== */
+/* 装饰条及左侧代码类型 */
+.theme-dark .markdown-preview-view pre::before {
+  /* 背景 */
+  background-color: #404045;
+  /* 分割线 */
+  border-bottom-color: #222327;
+}
+
+/* 复制按钮 */
+.theme-dark .markdown-preview-view .copy-code-button:hover {
+  background-color: #4b4b50 !important;
+}

@@ -1,0 +1,8 @@
+/* 图片居中显示 */
+.markdown-reading-view img,
+.markdown-source-view img,
+.markdown-preview-view img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
