@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/about.md",
+                "file": "content/posts/hello-world.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "hello-world"
             }
           }
         ]
@@ -186,10 +186,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0902a3cda07f5911",
+  "active": "cbcac56b8fb65794",
   "lastOpenFiles": [
-    "content/posts/hello-world.md",
+    "layouts/partials/footer.html",
     "content/about.md",
+    "content/posts/hello-world.md",
     "content/_index.md",
     "public/css/simple-icons.cc125cfd7958efc8dc27b5dfa6e2a9bbab933ce50b754f77e669e587c16ce857.css",
     "templates/blog-post.md",
