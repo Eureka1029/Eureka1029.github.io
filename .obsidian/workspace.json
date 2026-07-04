@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/blog-post.md",
+                "file": "content/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "blog-post"
+              "title": "about"
             }
           }
         ]
@@ -188,8 +188,8 @@
   },
   "active": "0902a3cda07f5911",
   "lastOpenFiles": [
-    "content/posts/未命名.md",
     "templates/blog-post.md",
+    "content/posts/未命名.md",
     "content/about.md",
     "content/_index.md",
     "content/search.md",
