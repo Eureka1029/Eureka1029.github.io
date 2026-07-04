@@ -1,0 +1,43 @@
+baseURL = "https://eureka1029.github.io/"
+locale = "zh-cn"
+title = "Eureka's Blog"
+theme = "archie"
+copyright = "© Eureka"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+  mode = "auto"
+  useCDN = false
+  subtitle = "记录学习与思考"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/Eureka1029"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[menu.main]]
+name = "Search"
+url = "/search/"
+weight = 5
