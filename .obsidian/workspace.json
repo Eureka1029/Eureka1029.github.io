@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/hello-world.md",
+                "file": "content/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hello-world"
+              "title": "about"
             }
           }
         ]
@@ -188,6 +188,9 @@
   },
   "active": "0902a3cda07f5911",
   "lastOpenFiles": [
+    "content/posts/hello-world.md",
+    "content/about.md",
+    "content/_index.md",
     "public/css/simple-icons.cc125cfd7958efc8dc27b5dfa6e2a9bbab933ce50b754f77e669e587c16ce857.css",
     "templates/blog-post.md",
     "templates",
