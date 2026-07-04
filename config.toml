@@ -1,6 +1,6 @@
 baseURL = "https://eureka1029.github.io/"
 locale = "zh-cn"
-title = "Eureka's Blog"
+title = "YongHao Ning"
 theme = "archie"
 copyright = "© Eureka"
 pygmentsstyle = "monokai"
@@ -10,13 +10,18 @@ pygmentscodefencesguesssyntax = true
 [params]
   mode = "auto"
   useCDN = false
-  subtitle = "记录学习与思考"
+  subtitle = "Don't look back"
   favicon = "/favicon.svg"
 
 [[params.social]]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/Eureka1029"
+
+[[params.social]]
+name = "Bilibili"
+icon = "simple:bilibili"
+url = "https://space.bilibili.com/326517598"
 
 [[menu.main]]
 name = "Home"

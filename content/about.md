@@ -1,10 +1,10 @@
 ---
-title: "关于"
+title: "About"
 date: 2026-07-04
 ---
 
-## 关于我
+## About Me
 
-欢迎来到我的博客。
+Hi, I'm **Yonghao Ning** (宁永灏), from Shenzhen, China. I studied at **Henan University** for my undergraduate degree. My main interest lies in **computer graphics** — I'm fascinated by rendering, geometry processing, and visual simulation.
 
-这里记录我的学习笔记、技术思考和日常感悟。
+Here I share my learning notes, technical thoughts, and occasional reflections.

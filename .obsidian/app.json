@@ -1,6 +1,7 @@
 {
   "attachmentFolderPath": "attach",
   "newFileLocation": "current",
+  "templateFolderPath": "templates",
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "A4",
