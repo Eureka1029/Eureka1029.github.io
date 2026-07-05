@@ -8,7 +8,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [params]
-  mode = "auto"
+  mode = "toggle"
   useCDN = false
   subtitle = ""
   favicon = "/favicon.svg"
@@ -24,26 +24,26 @@ icon = "simple:bilibili"
 url = "https://space.bilibili.com/326517598"
 
 [[menu.main]]
-name = "Home"
+name = "首页"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "全部文章"
 url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "About"
+name = "关于"
 url = "/about"
 weight = 3
 
 [[menu.main]]
-name = "Tags"
+name = "标签"
 url = "/tags"
 weight = 4
 
 [[menu.main]]
-name = "Search"
+name = "搜索"
 url = "/search/"
 weight = 5
