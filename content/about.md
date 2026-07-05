@@ -1,9 +1,7 @@
 ---
-title: About
+title: 关于我
 date: 2026-07-05
 ---
-
-Hi, I'm **Yonghao Ning**, from Shenzhen, China. I studied at **Henan University** for my undergraduate degree. My main interest lies in **computer graphics**.
 
 
 
