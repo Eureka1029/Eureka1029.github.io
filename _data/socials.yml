@@ -1,8 +1,7 @@
-# 按这里的顺序显示社交链接。
+# Social links are displayed in this order.
 github_username: Eureka1029
 rss_icon: true
 custom_social:
   logo: https://www.bilibili.com/favicon.ico
   title: Bilibili
   url: https://space.bilibili.com/326517598
-

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 文章标题
+title: Article title
 date: {{date:YYYY-MM-DD}} 00:00:00 +0800
-description: 一句话摘要
+description: A one-sentence summary
 tags: []
 categories: []
 ---
 
-在这里开始写作。
+Start writing here.

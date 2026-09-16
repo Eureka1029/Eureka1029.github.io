@@ -1,6 +1,6 @@
 ---
 layout: about
-title: 首页
+title: Home
 permalink: /
 subtitle:
 profile: false
@@ -14,22 +14,22 @@ latest_posts:
   limit: 5
 ---
 
-我是 **YongHao Ning**。
+I am **YongHao Ning**.
 
 
 
 <section class="education-section" aria-labelledby="education-heading">
-  <h2 id="education-heading">学习经历</h2>
+  <h2 id="education-heading">Education</h2>
   <a class="education-card" href="https://www.henu.edu.cn/" target="_blank" rel="noopener noreferrer">
     <span class="education-card__logo">
-      <img src="{{ '/assets/img/henan-university-logo.png' | relative_url }}" alt="河南大学校徽">
+      <img src="{{ '/assets/img/henan-university-logo.png' | relative_url }}" alt="Henan University emblem">
     </span>
     <span class="education-card__content">
       <span class="education-card__heading">
-        <strong class="education-card__school">河南大学</strong>
+        <strong class="education-card__school">Henan University</strong>
         <span class="education-card__date">2023–2027</span>
       </span>
-      <span class="education-card__major">网络工程 · 本科</span>
+      <span class="education-card__major">B.Eng. in Network Engineering</span>
     </span>
   </a>
 </section>

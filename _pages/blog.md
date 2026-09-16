@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: 文章
+title: Articles
 nav: true
 nav_order: 1
 pagination:
@@ -17,6 +17,10 @@ pagination:
 ---
 
 <div class="post">
+
+{% if site.posts.size == 0 %}
+  <p>No articles yet.</p>
+{% endif %}
 
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
