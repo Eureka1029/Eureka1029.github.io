@@ -1,0 +1,20 @@
+{
+  "commitMessage": "content: publish {{date}}",
+  "autoCommitMessage": "content: auto publish {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 1,
+  "autoPushInterval": 0,
+  "autoPullInterval": 0,
+  "autoPullOnBoot": true,
+  "autoCommitOnlyStaged": false,
+  "disablePush": false,
+  "pullBeforePush": true,
+  "disablePopups": false,
+  "showErrorNotices": true,
+  "disablePopupsForNoChanges": true,
+  "differentIntervalCommitAndPush": false,
+  "autoBackupAfterFileChange": true,
+  "syncMethod": "merge",
+  "mergeStrategy": "none",
+  "basePath": ""
+}
