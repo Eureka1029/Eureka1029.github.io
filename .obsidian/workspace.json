@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-09-16-welcome.md",
+                "file": "_pages/projects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-16-welcome"
+              "title": "projects"
             }
           }
         ]
@@ -190,6 +190,15 @@
   },
   "active": "0902a3cda07f5911",
   "lastOpenFiles": [
+    "_pages/blog.md",
+    "_pages/projects.md",
+    "_pages/about.md",
+    "_pages/404.md",
+    "_posts/2026-09-16-welcome.md",
+    "_projects/personal-site.md",
+    "templates/blog-post.md",
+    "assets/css/main.scss",
+    "assets/css",
     "content/_index.md",
     "content/about.md",
     "content/archives.md",
@@ -201,10 +210,7 @@
     "layouts/_default/terms.html",
     "layouts/_default/term.html",
     "layouts/_default/list.html",
-    "layouts/_default/single.html",
-    "layouts/index.html",
     "content/search.md",
-    "templates/blog-post.md",
     "content/posts/未命名.md",
     "content/posts/hello-world.md",
     "touxiang.svg",
