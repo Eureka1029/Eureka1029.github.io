@@ -5,9 +5,11 @@ permalink: /
 subtitle:
 profile: false
 selected_papers: false
-social: true
+social: false
 announcements:
-  enabled: false
+  enabled: true
+  scrollable: true
+  limit: 5
 latest_posts:
   enabled: true
   scrollable: true
