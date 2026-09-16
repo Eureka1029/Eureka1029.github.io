@@ -2,7 +2,7 @@
 layout: about
 title: 首页
 permalink: /
-subtitle: 过去来的人
+subtitle:
 profile: false
 selected_papers: false
 social: true
