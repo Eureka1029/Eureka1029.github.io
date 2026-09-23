@@ -21,7 +21,6 @@
                         <div class="d-flex">
                             <h1 class="h1 font-weight-normal profile-name">
                                 {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
-                                {% include widgets/name_logo.html %}
                             </h1>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto pl-3 flex-shrink-0 d-md-none">
@@ -34,7 +33,7 @@
                         <div class="text-profile-position">
                             {% for position in site.data.profile.positions %}
                             {% if position.logo -%}
-                            <img src="{{ position.logo | relative_url }}" alt="{{ position.name | escape }} emblem" class="inline-badge profile-affiliation-logo"/>
+                            <img src="{{ position.logo | relative_url }}" alt="{{ position.logo_alt | default: position.name | escape }}" class="inline-badge profile-affiliation-logo"/>
                             {%- endif %}
                             {% if position.icon %}<i class="{{ position.icon }} mr-1" aria-hidden="true"></i>{% endif %}
                             {% if position.bold %}<strong>{{ position.name }}</strong>{% else %}{{ position.name }}{% endif %}<br/>

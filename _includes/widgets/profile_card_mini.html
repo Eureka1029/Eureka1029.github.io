@@ -23,13 +23,13 @@
                 <div class="row">
                     <div class="col text-center h4">
                         {{ site.data.profile.primary_name }}
-                        {% include widgets/name_logo.html %}
                     </div>
                 </div>
 
                 <div class="row small">
                     <div class="col text-center">
                         {% for position in site.data.profile.positions %}
+                        {% if position.logo %}<img src="{{ position.logo | relative_url }}" alt="{{ position.logo_alt | default: position.name | escape }}" class="inline-badge profile-affiliation-logo">{% endif %}
                         {% if position.icon %}<i class="{{ position.icon }} mr-1" aria-hidden="true"></i>{% endif %}
                         {% if position.bold %}<strong>{{ position.name }}</strong>{% else %}{{ position.name }}{% endif %}<br/>
                         {% endfor %}

@@ -1,12 +1,11 @@
 primary_name: Yonghao Ning
 secondary_name: ""
 navbar_name: Yonghao Ning
-name_logo: /assets/img/henan-university-emblem.png
-name_logo_alt: Henan University emblem
 
 positions:
   - name: B.Eng. Student in Network Engineering
-    icon: fas fa-graduation-cap
+    logo: /assets/img/henan-university-emblem.png
+    logo_alt: Henan University emblem
     bold: true
 
 github: Eureka1029
@@ -29,3 +28,5 @@ education:
     logo: /assets/img/henan-university-emblem.png
     position: B.Eng. in Network Engineering
     date: Sep 2023 – Jun 2027
+
+experience: []
