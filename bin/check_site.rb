@@ -12,6 +12,13 @@ errors = required.reject { |path| root.join(path).file? }.map { |path| "Missing 
 
 Dir.glob(root.join("**/*.html").to_s).each do |file|
   html = File.read(file, encoding: "UTF-8")
+  if html.match?(/<head[\s>]/i)
+    icon_tags = html.scan(/<link\b[^>]*>/i).select { |tag| tag.match?(/rel=["'](?:icon|shortcut icon|apple-touch-icon)["']/i) }
+    expected_icon = "/assets/img/railway-favicon.jpg"
+    unless icon_tags.size == 3 && icon_tags.all? { |tag| tag.include?(expected_icon) }
+      errors << "#{Pathname.new(file).relative_path_from(root)}: missing or inconsistent site icon"
+    end
+  end
   html.scan(/(?:href|src|data-src)\s*=\s*["']([^"']*)["']/i).flatten.each do |raw|
     href = CGI.unescapeHTML(raw).split(/[?#]/, 2).first.to_s
     next if href.empty? || href.start_with?("//") || href.match?(/\A[a-z][a-z0-9+.-]*:/i)

@@ -76,6 +76,12 @@ h1, h2, h3, h4, h5, h6,
     object-fit: cover;
 }
 
+.profile-name-logo {
+    vertical-align: baseline;
+    object-fit: contain;
+    margin-left: 4px;
+}
+
 @media (max-width: 767.98px) {
     .profile-name {
         font-size: 1.8rem;

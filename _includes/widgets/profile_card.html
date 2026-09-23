@@ -10,7 +10,7 @@
                             <img
                                 src="{{ site.data.profile.portrait_url | relative_url }}"
                                 class="figure-img img-fluid rounded-xl profile-portrait"
-                                width="180" height="263"
+                                width="180" height="180"
                                 alt="{{ site.data.profile.portrait_caption | escape }}"
                                 data-toggle="tooltip"
                                 data-placement="top"
@@ -21,6 +21,7 @@
                         <div class="d-flex">
                             <h1 class="h1 font-weight-normal profile-name">
                                 {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                                {% include widgets/name_logo.html %}
                             </h1>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto pl-3 flex-shrink-0 d-md-none">
