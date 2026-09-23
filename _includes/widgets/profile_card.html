@@ -36,7 +36,8 @@
                             {% if position.logo -%}
                             <img src="{{ position.logo | relative_url }}" alt="{{ position.name | escape }} emblem" class="inline-badge profile-affiliation-logo"/>
                             {%- endif %}
-                            {{ position.name }}<br/>
+                            {% if position.icon %}<i class="{{ position.icon }} mr-1" aria-hidden="true"></i>{% endif %}
+                            {% if position.bold %}<strong>{{ position.name }}</strong>{% else %}{{ position.name }}{% endif %}<br/>
                             {% endfor %}
                         </div>
                         <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
