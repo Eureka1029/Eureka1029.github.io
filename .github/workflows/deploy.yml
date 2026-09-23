@@ -1,86 +1,52 @@
-name: Build and deploy al-folio
+name: Build and deploy academic homepage
 
 on:
   push:
     branches: [main]
-    paths:
-      - "_bibliography/**"
-      - "_data/**"
-      - "_pages/**"
-      - "_posts/**"
-      - "_projects/**"
-      - "assets/**"
-      - "**/*.md"
-      - "_config.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "package.json"
-      - "package-lock.json"
-      - "purgecss.config.js"
-      - ".github/workflows/deploy.yml"
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Ruby
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: '3.3'
           bundler-cache: true
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-          cache: pip
-
-      - name: Install Python dependencies
-        run: pip install --upgrade nbconvert
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: npm
-
-      - name: Install Node dependencies
-        run: npm ci
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
       - name: Build site
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
-
-      - name: Remove unused CSS
-        run: |
-          npm install --global purgecss
-          purgecss -c purgecss.config.js
-
+      - name: Check generated pages and local links
+        run: ruby bin/check_site.rb _site
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

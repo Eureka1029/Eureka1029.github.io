@@ -1,4 +1,6 @@
 _site
+.tools/
+_verification/
 .bundle
 .DS_store
 .idea
