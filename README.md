@@ -20,7 +20,7 @@ git push origin main
 
 使用 Obsidian 时，打开本目录作为仓库。现有 Obsidian Git 设置为文件修改后约 1 分钟自动提交并同步；Obsidian 必须保持运行，Git 认证和网络也必须可用。单独点击“Commit”时仍需执行“Push”或“Commit-and-sync”。
 
-如果出现 `127.0.0.1:7897` 连接失败，这是 Git 配置的本地代理没有运行，需要启动相应代理或修正 Git 代理配置，推送成功后才会触发发布。
+当前项目的 Git 代理使用 `http://127.0.0.1:7890`，推送时请保持代理运行。PowerShell 中也可设置 `$env:all_proxy='http://127.0.0.1:7890'`。推送成功后才会触发发布。
 
 GitHub Pages 的发布源应为 **Settings → Pages → Source → GitHub Actions**。仓库已经有通过 Actions 成功部署的记录。
 

@@ -31,6 +31,9 @@ jobs:
         run: bundle exec jekyll build --trace
       - name: Check generated pages and local links
         run: ruby bin/check_site.rb _site
+      - name: Record deployed revision
+        run: |
+          ruby -rjson -e 'puts JSON.generate(revision: ENV.fetch("GITHUB_SHA"))' > _site/build-info.json
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
