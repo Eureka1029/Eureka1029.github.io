@@ -1,4 +1,4 @@
-# YongHao Ning 的学术主页
+# Yonghao Ning 的学术主页
 
 网站：<https://eureka1029.github.io/>
 

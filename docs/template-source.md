@@ -11,9 +11,10 @@ Local adaptations:
 - Personal profile, author map, navigation and production site URL.
 - Jekyll feed and sitemap plugins, article layout defaults and source exclusions.
 - Existing blog URLs and the legacy post layout remain supported.
-- Optional email is guarded, Bilibili is included, and the navbar name links home.
+- Optional email is guarded, and the navbar name links home.
 - Empty collection messages and automatic hiding of an empty selected-publications section.
 - News migrated to the upstream title field; education uses the upstream position field.
+- Layout 2 combines the profile image and biography; custom YN icon and supplied Henan University emblem.
 - Homepage setup diagnostics are disabled after configuration.
 - GitHub Actions builds and checks every main push before deployment; pull requests are build-only.
 

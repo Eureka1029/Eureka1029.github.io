@@ -1,26 +1,26 @@
-primary_name: YongHao Ning
+primary_name: Yonghao Ning
 secondary_name: ""
-navbar_name: YongHao Ning
+navbar_name: Yonghao Ning
 
 positions:
   - name: B.Eng. Student in Network Engineering
   - name: Henan University
-    logo: /assets/img/henan-university-logo.png
+    logo: /assets/img/henan-university-emblem.png
 
 github: Eureka1029
-bilibili: https://space.bilibili.com/326517598
 # email: your-address@example.com
-# portrait_url: /assets/img/portrait.jpg
+portrait_url: /assets/img/yonghao-ning-icon.png
+portrait_caption: Yonghao Ning — YN monogram
 # cv_link: /assets/files/cv.pdf
 # gscholar: your-google-scholar-id
 
 short_bio_text_justify: false
 short_bio: >-
-  <p>I am <strong>YongHao Ning</strong>, a Network Engineering undergraduate
+  <p>I am <strong>Yonghao Ning</strong>, a Network Engineering undergraduate
   at <a href="https://www.henu.edu.cn/">Henan University</a>.</p>
 
 education:
   - name: Henan University
-    logo: /assets/img/henan-university-logo.png
+    logo: /assets/img/henan-university-emblem.png
     position: B.Eng. in Network Engineering
     date: 2023–2027
