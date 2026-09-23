@@ -2,7 +2,9 @@
 
 - Mode: built-in image generation, followed by a refinement edit.
 - Asset: `assets/img/yonghao-ning-icon.png`.
-- Design: white YN initials on an opaque navy square, used for the favicon and profile monogram.
+- Design: white YN initials on an opaque navy square; retained as the original generated asset.
+- Current favicon: user-supplied `assets/img/yonghao-ning-favicon.png`.
+- Current portrait: user-supplied `assets/img/yonghao-ning-portrait.jpg`.
 - The Henan University emblem is the user-supplied original, copied without modification.
 
 ## Final refinement prompt

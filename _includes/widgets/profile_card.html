@@ -10,7 +10,7 @@
                             <img
                                 src="{{ site.data.profile.portrait_url | relative_url }}"
                                 class="figure-img img-fluid rounded-xl profile-portrait"
-                                width="180" height="180"
+                                width="180" height="263"
                                 alt="{{ site.data.profile.portrait_caption | escape }}"
                                 data-toggle="tooltip"
                                 data-placement="top"
@@ -25,7 +25,7 @@
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto pl-3 flex-shrink-0 d-md-none">
                                 <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
-                                    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded" width="64" height="64" alt="{{ site.data.profile.portrait_caption | escape }}">
+                                    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded profile-portrait" width="64" height="64" alt="{{ site.data.profile.portrait_caption | escape }}">
                                 </a>
                             </div>
                             {% endif %}
