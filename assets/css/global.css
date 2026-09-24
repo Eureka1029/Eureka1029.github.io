@@ -75,8 +75,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .profile-affiliation-logo {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     vertical-align: middle;
     margin: 6px 6px 6px 0;
