@@ -36,18 +36,14 @@
                     </div>
                 </div>
 
-                <div class="row small">
-                    <div class="col text-center">
-                        {% if site.data.profile.email %}
-                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            {{ site.data.profile.email | replace: "@", "(at)" }}
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
-
                 <div class="row pt-2">
                     <div class="col text-center h4">
+                        {% if site.data.profile.email %}
+                        <a class="px-1 no-break" href="mailto:{{ site.data.profile.email | encode_email }}" title="{{ site.data.profile.email | escape }}" aria-label="Send email to {{ site.data.profile.email | escape }}">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.gscholar %}
                         {%- if site.data.profile.gscholar contains 'scholar.google' -%}
                         {%- assign gscholar_url = site.data.profile.gscholar -%}
