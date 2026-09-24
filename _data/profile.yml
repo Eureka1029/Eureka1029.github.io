@@ -3,13 +3,13 @@ secondary_name: ""
 navbar_name: Yonghao Ning
 
 positions:
-  - name: B.Eng. Student in Network Engineering
+  - name: B.Eng. Student in Network Engineering @ Henan University
     logo: /assets/img/henan-university-emblem.png
     logo_alt: Henan University emblem
     bold: true
 
 github: Eureka1029
-# email: your-address@example.com
+email: 1285523226@qq.com
 portrait_url: /assets/img/yonghao-ning-portrait-square.jpg
 portrait_caption: Yonghao Ning
 # cv_link: /assets/files/cv.pdf
