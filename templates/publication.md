@@ -1,7 +1,6 @@
 ---
 title: Paper title
 date: {{date:YYYY-MM-DD}}
-selected: true
 authors:
   - Yonghao Ning
 pub: Venue name

@@ -4,7 +4,7 @@ require "pathname"
 require "uri"
 
 root = Pathname.new(ARGV.fetch(0, "_site")).expand_path
-required = %w[index.html blog/index.html publications/index.html showcase/index.html
+required = %w[index.html blog/index.html showcase/index.html
               projects/index.html 404.html feed.xml sitemap.xml assets/css/global.css
               assets/css/blog.css assets/js/common.js assets/js/blog.js
               assets/images/empty_300x200.png assets/css/images/loading.gif]
