@@ -1,11 +1,22 @@
 {% assign publications = include.publications %}
 <section id="publications" aria-labelledby="publications-heading" class="my-3 p-0 bg-white shadow-sm rounded-xl">
-    <h2 id="publications-heading" class="h6 border-bottom border-gray p-3 mb-0">
-        <i class="fas fa-book" aria-hidden="true"></i> Publications
-    </h2>
-    {% for item in publications %}
-        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=false last=forloop.last %}
-    {% else %}
-        <p class="p-3 mb-0 text-muted small">No publications yet.</p>
-    {% endfor %}
+    <div class="border-bottom border-gray p-3 d-flex flex-column flex-sm-row align-items-sm-center">
+        <h2 id="publications-heading" class="h6 mb-2 mb-sm-0">Publications</h2>
+        <div role="search" aria-label="Publications" class="publication-search ml-sm-auto">
+            <label for="publication-search" class="sr-only">Search publications</label>
+            <input id="publication-search" type="search" class="form-control form-control-sm" placeholder="Search publications…" aria-controls="publication-results" autocomplete="off">
+        </div>
+    </div>
+    <div id="publication-results">
+        {% for item in publications %}
+            <div class="publication-entry">
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=false last=forloop.last %}
+            </div>
+        {% else %}
+            <p class="p-3 mb-0 text-muted small">No publications yet.</p>
+        {% endfor %}
+    </div>
+    <p id="publication-no-results" class="p-3 mb-0 text-muted small" hidden>No matching publications.</p>
+    <p id="publication-search-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
 </section>
+<script defer src="{{ '/assets/js/publications.js' | relative_url }}"></script>
