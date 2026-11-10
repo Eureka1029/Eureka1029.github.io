@@ -1,5 +1,5 @@
 baseURL: https://eureka1029.github.io/
-title: Yonghao Ning
+title: "Eureka'log"
 locale: en
 timeZone: Asia/Shanghai
 theme: PaperMod
@@ -16,31 +16,27 @@ outputFormats:
   rss:
     baseName: feed
 
+outputs:
+  home: [html, rss, json]
+
 markup:
   highlight:
     noClasses: false
 
 params:
-  author: Yonghao Ning
-  description: Yonghao Ning's academic homepage, projects, and technical notes.
+  author: Eureka
+  description: Eureka's learning notes since 2026.
   mainSections: [blog]
   defaultTheme: auto
+  ShowReadingTime: true
   ShowShareButtons: false
 
   assets:
-    favicon: assets/img/railway-favicon.jpg
+    favicon: favicon.png
 
-  profileMode:
-    enabled: true
-    imageUrl: img/yonghao-ning-portrait-square.jpg
-    imageTitle: Yonghao Ning
-    imageWidth: 150
-    imageHeight: 150
-    subtitle: >-
-      I am a Network Engineering student at Henan University.
-      I have been admitted to the [VCC group](https://vcc.tech/index) at Shenzhen University
-      through the recommendation-based admission program. My advisor is Associate Professor
-      [Xu Pengfei](https://pengfeixu.com/), and my research interest is computer graphics.
+  homeInfoParams:
+    title: "Eureka&#39;log"
+    content: "Hi, this is Eureka. I’m documenting my learning notes in this blog since 2026."
 
   socialIcons:
     - name: bilibili
@@ -52,15 +48,18 @@ params:
 
 menus:
   main:
-    - name: Blog
-      pageRef: /blog
+    - name: Posts
+      pageRef: /
       weight: 10
+    - name: Archive
+      pageRef: /archives
+      weight: 20
+    - name: Search
+      pageRef: /search
+      weight: 30
+    - name: Tags
+      pageRef: /tags
+      weight: 40
     - name: About
       pageRef: /about
-      weight: 20
-    - name: Publications
-      pageRef: /publications
-      weight: 30
-    - name: Showcase
-      pageRef: /showcase
-      weight: 40
+      weight: 50

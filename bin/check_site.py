@@ -24,7 +24,8 @@ def check_site(root):
     required = (
         "index.html", "blog/index.html", "about/index.html", "publications/index.html",
         "showcase/index.html", "projects/index.html", "404.html", "feed.xml",
-        "sitemap.xml", "robots.txt",
+        "sitemap.xml", "robots.txt", "archives/index.html", "search/index.html",
+        "tags/index.html", "index.json",
     )
     errors = [f"Missing output: {name}" for name in required if not (root / name).is_file()]
     if errors:

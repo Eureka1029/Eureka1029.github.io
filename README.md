@@ -1,4 +1,4 @@
-# Yonghao Ning 的博客
+# Eureka'log
 
 网站地址为 <https://eureka1029.github.io/>。站点使用 Hugo 和 [PaperMod](https://github.com/adityatelange/hugo-PaperMod/)，主题随仓库提供。固定版本见 [主题来源](docs/template-source.md)。
 

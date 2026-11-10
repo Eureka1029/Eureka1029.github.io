@@ -15,3 +15,8 @@ September 2023 – June 2027
 ## News
 
 - **September 24, 2026** · I have been admitted to Shenzhen University through the recommendation-based admission program.
+
+## Publications and projects
+
+- [Publications](../publications/)
+- [Showcase](../showcase/)
