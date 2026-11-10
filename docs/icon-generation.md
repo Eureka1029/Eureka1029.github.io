@@ -5,7 +5,7 @@
 - Design: white YN initials on an opaque navy square; retained as the original generated asset.
 - Current favicon: the supplied crocodile illustration, in `static/favicon.png` with browser, iOS, and Safari variants.
 - Portrait used by the former profile layout: user-supplied `assets/img/yonghao-ning-portrait-square.jpg`.
-- The Henan University emblem is the user-supplied original, copied without modification.
+- The Henan University emblem uses the supplied artwork, resized for inline display on the About page.
 
 ## Final refinement prompt
 
