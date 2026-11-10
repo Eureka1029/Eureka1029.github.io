@@ -1,6 +1,12 @@
 .md-content img.in-text[src$="/henan-university-emblem.png"] {
-    height: 1em;
+    height: 1.4em;
     width: auto;
     vertical-align: middle;
     border-radius: 0;
+}
+
+[data-theme="dark"] .md-content img.in-text[src$="/henan-university-emblem.png"] {
+    /* Blend the inverted white areas into the page background. */
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
 }
