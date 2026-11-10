@@ -1,4 +1,4 @@
-name: Build and deploy academic homepage
+name: Build and deploy Hugo site
 
 on:
   push:
@@ -17,27 +17,29 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.169.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-      - name: Build site
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build --trace
-      - name: Check generated pages and local links
-        run: ruby bin/check_site.rb _site
-      - name: Record deployed revision
+      - name: Install Hugo
         run: |
-          ruby -rjson -e 'puts JSON.generate(revision: ENV.fetch("GITHUB_SHA"))' > _site/build-info.json
+          archive="hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
+          curl --fail --silent --show-error --location --retry 3 \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/$archive" \
+            --output "$RUNNER_TEMP/$archive"
+          tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP" hugo
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+      - name: Build site
+        run: hugo --environment production --gc --minify
+      - name: Check generated pages and local links
+        run: python3 bin/check_site.py public
+      - name: Record deployed revision
+        run: printf '{"revision":"%s"}\n' "$GITHUB_SHA" > public/build-info.json
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: public
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

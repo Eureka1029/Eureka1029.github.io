@@ -1,0 +1,66 @@
+baseURL: https://eureka1029.github.io/
+title: Yonghao Ning
+locale: en
+timeZone: Asia/Shanghai
+theme: PaperMod
+enableRobotsTXT: true
+
+frontmatter:
+  date: [":date", ":filename", ":default"]
+
+permalinks:
+  page:
+    blog: /blog/:year/:slugorcontentbasename/
+
+outputFormats:
+  rss:
+    baseName: feed
+
+markup:
+  highlight:
+    noClasses: false
+
+params:
+  author: Yonghao Ning
+  description: Yonghao Ning's academic homepage, projects, and technical notes.
+  mainSections: [blog]
+  defaultTheme: auto
+  ShowShareButtons: false
+
+  assets:
+    favicon: assets/img/railway-favicon.jpg
+
+  profileMode:
+    enabled: true
+    imageUrl: img/yonghao-ning-portrait-square.jpg
+    imageTitle: Yonghao Ning
+    imageWidth: 150
+    imageHeight: 150
+    subtitle: >-
+      I am a Network Engineering student at Henan University.
+      I have been admitted to the [VCC group](https://vcc.tech/index) at Shenzhen University
+      through the recommendation-based admission program. My advisor is Associate Professor
+      [Xu Pengfei](https://pengfeixu.com/), and my research interest is computer graphics.
+
+  socialIcons:
+    - name: bilibili
+      title: Bilibili
+      url: https://space.bilibili.com/326517598
+    - name: email
+      title: Email
+      url: mailto:1285523226@qq.com
+
+menus:
+  main:
+    - name: Blog
+      pageRef: /blog
+      weight: 10
+    - name: About
+      pageRef: /about
+      weight: 20
+    - name: Publications
+      pageRef: /publications
+      weight: 30
+    - name: Showcase
+      pageRef: /showcase
+      weight: 40

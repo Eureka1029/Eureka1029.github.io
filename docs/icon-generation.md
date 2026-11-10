@@ -1,9 +1,9 @@
 # Yonghao Ning icon
 
 - Mode: built-in image generation, followed by a refinement edit.
-- Asset: `assets/img/yonghao-ning-icon.png`.
+- Asset: `static/assets/img/yonghao-ning-icon.png`.
 - Design: white YN initials on an opaque navy square; retained as the original generated asset.
-- Current favicon: user-supplied `assets/img/railway-favicon.jpg`, shared by every HTML layout.
+- Current favicon: user-supplied `static/assets/img/railway-favicon.jpg`, with PNG sizes for browser tabs and iOS.
 - Current portrait: user-supplied `assets/img/yonghao-ning-portrait-square.jpg`.
 - The Henan University emblem is the user-supplied original, copied without modification.
 

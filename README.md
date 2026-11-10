@@ -1,60 +1,35 @@
-# Yonghao Ning 的学术主页
+# Yonghao Ning 的博客
 
-网站：<https://eureka1029.github.io/>
+网站地址为 <https://eureka1029.github.io/>。站点使用 Hugo 和 [PaperMod](https://github.com/adityatelange/hugo-PaperMod/)，主题随仓库提供。固定版本见 [主题来源](docs/template-source.md)。
 
-本项目使用 [luost26/academic-homepage](https://github.com/luost26/academic-homepage) 的原始 Jekyll 模板、组件、样式和脚本，已迁入个人资料。上游版本及本地调整见 [docs/template-source.md](docs/template-source.md)。
+## 本地预览
 
-## 修改后自动生成页面
+安装 Hugo 0.169.0 后，在仓库目录运行以下命令。
 
-**修改提交并推送到 GitHub 的 `main` 分支后，GitHub Actions 会自动构建、检查并发布网站。** 仅在本地执行 `git commit` 不会触发远端发布。
-
-普通 Git 操作：
-
-```powershell
-git add -A
-git commit -m "content: update homepage"
-git push origin main
+```sh
+hugo server --buildDrafts
 ```
 
-也可以直接在 GitHub 网页上编辑文件并提交到 `main`。在 [Actions](https://github.com/Eureka1029/Eureka1029.github.io/actions) 查看构建结果。构建或链接检查失败时，新版本不会部署。
+打开 <http://localhost:1313/>。发布前可运行生产构建和页面链接检查。
 
-使用 Obsidian 时，打开本目录作为仓库。现有 Obsidian Git 设置为文件修改后约 1 分钟自动提交并同步；Obsidian 必须保持运行，Git 认证和网络也必须可用。单独点击“Commit”时仍需执行“Push”或“Commit-and-sync”。
+```sh
+hugo --environment production --gc --minify
+python bin/check_site.py public
+```
 
-当前项目的 Git 代理使用 `http://127.0.0.1:7890`，推送时请保持代理运行。PowerShell 中也可设置 `$env:all_proxy='http://127.0.0.1:7890'`。推送成功后才会触发发布。
-
-GitHub Pages 的发布源应为 **Settings → Pages → Source → GitHub Actions**。仓库已经有通过 Actions 成功部署的记录。
-
-## 内容编辑位置
+## 编辑内容
 
 | 内容 | 文件或目录 |
 | --- | --- |
-| 姓名、简介、头像、教育经历、社交链接 | `_data/profile.yml` |
-| 导航 | `_data/navigation.yml` |
-| 首页模块开关、页脚 | `_data/display.yml` |
-| 博客文章 | `_posts/YYYY-MM-DD-title.md` |
-| 首页 Publications 板块 | `_publications/`，按日期从新到旧显示全部论文 |
-| 首页新闻 | `_news/`，新闻文字使用 front matter 中的 `title` |
-| 项目展示 | `_showcase/`，设置 `show: true` |
-| 全站与文章样式 | `assets/css/global.css`、`assets/css/blog.css` |
+| 首页简介、联系方式和导航 | `hugo.yaml` |
+| 教育经历和动态 | `content/about.md` |
+| 博客文章 | `content/blog/` |
+| 论文 | `content/publications/` |
+| 项目 | `content/showcase/` |
+| 静态图片 | `static/assets/img/` |
 
-`templates/` 提供文章、论文、新闻和项目的写作模板。Obsidian 模板中的日期占位符会在插入时替换；直接新建文件时填写真实日期。未来日期的文章会在之后一次构建时才被发布。
+在 Obsidian 里可以继续使用 `templates/` 下的写作模板。也可以用 `hugo new content blog/my-post.md` 创建草稿，写完后把 `draft` 改为 `false`。文章网址为 `/blog/年份/文件名/`，设置 `slug` 可以自定义最后一段。
 
-文章使用 `layout: blog_post`，旧的 `layout: post` 也兼容。添加文章后，博客列表、RSS 和文章页面会在下次构建时自动更新。添加到 `_publications/` 的论文会自动出现在首页 Publications 板块，无需设置 `selected: true`。导航中的 Publications 跳转到首页的 `/#publications`，不再使用独立列表页；板块开关为 `_data/display.yml` 中的 `homepage.show_publications`。
+## 发布
 
-## 本地预览和检查
-
-安装 Ruby 3.3 和 Bundler 后运行：
-
-```sh
-bundle install
-bundle exec jekyll serve
-```
-
-打开 <http://localhost:4000/>。生产构建与 CI 使用相同命令：
-
-```sh
-bundle exec jekyll build --trace
-ruby bin/check_site.rb _site
-```
-
-发布工作流在 `.github/workflows/deploy.yml`：推送到 `main` 后构建并部署；拉取请求运行构建和检查；也支持手动运行。
+推送到 GitHub 的 `main` 分支后，[GitHub Actions](https://github.com/Eureka1029/Eureka1029.github.io/actions) 会构建、检查并发布到 GitHub Pages。拉取请求会运行同样的构建和检查。Pages 的发布源设置为 **GitHub Actions**。

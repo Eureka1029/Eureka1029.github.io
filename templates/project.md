@@ -1,13 +1,8 @@
 ---
 title: Project title
-date: {{date:YYYY-MM-DD}}
-show: true
-group: Projects
-width: 6
+date: "{{date:YYYY-MM-DD}}T00:00:00+08:00"
+draft: true
+description: A one-sentence summary.
 ---
 
-<div class="card-body" markdown="1">
-### Project title
-
 Describe the project here.
-</div>
