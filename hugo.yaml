@@ -35,7 +35,7 @@ params:
     favicon: favicon.png
 
   homeInfoParams:
-    title: "Eureka&#39;log"
+    title: "👋 Welcome to Eureka’Log"
     content: "Hi, this is Eureka. I’m documenting my learning notes in this blog since 2026."
 
   socialIcons:
