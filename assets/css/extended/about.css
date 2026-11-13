@@ -1,12 +1,42 @@
-.md-content img.in-text[src$="/henan-university-emblem.png"] {
+.education-card {
+    padding: clamp(1rem, 4vw, 1.5rem);
+    border: 1px solid var(--tertiary);
+    border-radius: var(--radius);
+    background: var(--entry);
+}
+
+.education-card-school {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+    color: var(--primary);
+    font-size: 1.125em;
+}
+
+.md-content .education-card-school img {
+    flex: none;
     height: 1.4em;
     width: auto;
-    vertical-align: middle;
+    margin: 0;
     border-radius: 0;
 }
 
-[data-theme="dark"] .md-content img.in-text[src$="/henan-university-emblem.png"] {
-    /* Blend the inverted white areas into the page background. */
+[data-theme="dark"] .education-card-school img {
+    /* Blend the inverted white areas into the card background. */
     filter: invert(1) hue-rotate(180deg);
     mix-blend-mode: screen;
+}
+
+.education-card-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+    align-items: baseline;
+    margin-top: 0.5rem;
+}
+
+.education-card-dates {
+    color: var(--secondary);
+    font-size: 0.875em;
 }
